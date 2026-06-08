@@ -204,8 +204,11 @@ export default function App() {
           </div>
           <nav style={styles.nav}>
             {isPremium && <span style={styles.navBadge}>✨ Premium activo</span>}
-            <button style={styles.premBtn} onClick={() => setShowPremium(true)}>
-              Obtener Premium
+<button style={styles.premBtn} onClick={async () => {
+  const res = await fetch('/api/checkout', { method: 'POST' });
+  const { url } = await res.json();
+  window.location.href = url;
+}}>              Obtener Premium
             </button>
           </nav>
         </header>

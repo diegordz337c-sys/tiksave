@@ -12,6 +12,7 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
 export const metadata: Metadata = {
   title: "TikSave – Descargar TikTok sin marca de agua gratis",
   description: "Descarga videos de TikTok sin marca de agua en HD gratis. Sin registro, sin límites. Pega el enlace y descarga al instante.",
@@ -42,6 +43,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="kp1Hml_NuGSRQCj0IaJ8hFPURf9_iEdjr9f7Jf_cVU8" />
+        <meta name="google-adsense-account" content="ca-pub-1085540329087607" />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1085540329087607"
